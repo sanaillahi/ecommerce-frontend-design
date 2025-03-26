@@ -767,7 +767,6 @@ background-color: #fff;
     height: 39px;
     width: 39px;
     border-radius: 50%;
-    background-color: red;
     /* mix-blend-mode: color-burn; */
     mix-blend-mode: darken;
    
@@ -786,6 +785,7 @@ background-color: #fff;
     justify-content: center;
     font-size: 18px;
     color: #3333331f;
+    
 }
 
 .service-card p {
@@ -1023,3 +1023,6 @@ gap: 70px;
     color: #333;
 }
 
+#end-drop {
+    mix-blend-mode: color-burn;
+}
