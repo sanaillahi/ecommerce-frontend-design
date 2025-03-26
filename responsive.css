@@ -1,0 +1,174 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 149px;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Logo and Search Bar Section */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+/* Search Box */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#search-bar {
+    width: 400px;
+    padding: 9.5px 15px;
+    border: 2px solid #0D6EFD;
+    border-radius: 8px 0 0 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+#search-bar::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+/* All Categories Button */
+#category-dropdown {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #0D6EFD;
+    border-left: none;
+    padding-left: 17px;
+    width: 150px;
+    height: 39px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Dropdown Arrow */
+#dropdown-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Search Button */
+#search-button {
+    background-color: #0D6EFD;
+    color: white;
+    border: none;
+    width: 120px;
+    padding: 11px 20px;
+    font-size: 14px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #0b5ed7;
+}
+
+/* Icons Section */
+.icons-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Icon Container */
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.icon-container:hover {
+    color: #0D6EFD;
+}
+
+.icon-container img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 50px;
+    }
+    
+    #search-bar {
+        width: 300px;
+    }
+    
+    .icons-section {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    .logo {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .search-container {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    #search-bar {
+        width: 80%;
+    }
+    
+    .icons-section {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+    
+    .logo {
+        gap: 10px;
+    }
+    
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #search-bar {
+        width: 100%;
+    }
+    
+    .icons-section {
+        flex-direction: row;
+        gap: 10px;
+    }
+}

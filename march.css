@@ -1,0 +1,1025 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.big{
+    background-color: #f5f7fa; /* Light background */
+  padding: 20px;
+  width: 100%;
+  
+}
+
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 149px; /* Increased padding for better spacing */
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 0 auto; /* Center the navbar */
+    
+}
+
+/* Logo and Search Bar Section */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+ 
+}
+
+/* Search Box */
+.search-container {
+    display: flex;
+    /* margin-left: 160px; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+#search-bar {
+    width: 400px; /* Fixed width for search bar */
+    padding: 9.5px 15px;
+    border: 2px solid #0D6EFD;
+    border-radius: 8px 0 0 8px;
+    font-size: 14px;
+    outline: none; /* Remove default outline */
+}
+
+#search-bar::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+/* All Categories Button */
+#category-dropdown {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #0D6EFD;
+    border-left: none;
+    /* padding: 1px 15px; */
+    padding-left: 17px;
+    width: 150px;
+    height: 39px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between text and icon */
+}
+
+/* #category-dropdown:hover {
+    background-color: #f0f0f0; 
+}*/
+
+/* Dropdown Arrow */
+#dropdown-icon {
+    width: 16px;
+    height: 16px;
+}
+
+/* Search Button */
+#search-button {
+    background-color: #0D6EFD;
+    color: white;
+    border: none;
+    width: 120px;
+    padding: 11px 20px;
+    font-size: 14px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #0b5ed7; /* Darker blue on hover */
+}
+
+/* Icons Section */
+.icons-section {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Space between icons */
+}
+
+/* Icon Container */
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+    cursor: pointer;
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.icon-container:hover {
+    color: #0D6EFD; /* Change color on hover */
+}
+
+.icon-container img {
+    width: 24px; /* Fixed icon size */
+    height: 24px;
+}
+
+.sec {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.264);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    /* Aligns everything in one line */
+    justify-content: space-around;
+    /* Pushes elements to both ends */
+    padding-left: 20px;
+    /* padding: 0 50px;  Adds padding on both left and right  */
+  
+}
+
+/* Left Section (Menu + Links) */
+.sec .menu-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+   
+
+}
+
+/* Right Section (Language + Country) */
+.sec .lang {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+/* Adjust icon size */
+.sec img {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Adjust text spacing */
+.sec span {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Optional: Space between last word and dropdown */
+#vee {
+    margin-left: 0px;
+}
+
+
+/* Parent container */
+.main-container {
+  background-color: white;
+    /* border: solid rgba(0, 0, 0, 0.605) 1px; */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.248);
+    border-radius: 4px;
+    margin: 0px auto auto auto;
+    display: grid;
+    grid-template-columns: 270px 600px 300px;
+    /* Sidebar, Banner, Right Sidebar */
+    gap: 25px;
+    padding: 20px;
+    max-width: 1250px;
+
+}
+
+
+/* Sidebar */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar .active {
+    background: #e5f0ff;
+    color: black;
+}
+
+.sidebar li:hover {
+    background: #e5f0ff;
+    /* Dull blue */
+    color: black;
+    /* Change text color if needed */
+
+}
+
+
+
+/*  this just needs to be responsive now!
+  (green 1st banner)*/
+
+/* Banner Section */
+.banner {
+    background-image: url(photos/Banner-board-800x420\ 2.png);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-weight: 200;
+    height: 100%;
+    font-size: x-large;
+
+}
+
+.btn {
+    background: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 109px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/* right side  */
+/* Right Sidebar */
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 290px;
+    /* Adjust width */
+}
+
+
+
+
+
+
+/* User Box */
+.user-box {
+    background: #e5f0ff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 290px;
+    /* Adjust width */
+    display: flex;
+    flex-direction: column;
+    /* Stack .up and .buttons */
+    align-items: center;
+}
+
+/* Flex container for image and text */
+.up {
+    display: flex;
+    /* Align image and text side by side */
+    align-items: center;
+    /* Center vertically */
+    gap: 12px;
+    /* Space between image and text */
+    width: 100%;
+    /* Ensure it takes full width */
+}
+
+/* Image container */
+.img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* User Info */
+.userbox-info {
+    text-align: left;
+
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    /* Stack buttons */
+    width: 100%;
+    margin-top: 0px;
+    /* Space from text */
+
+}
+
+.buttons .join,
+.buttons .login {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.join {
+    background-color: #0D6EFD;
+    color: white;
+    border: none;
+}
+
+.login {
+    border: solid 1px #0D6EFD;
+    color: #0D6EFD;
+    background: white;
+}
+
+/* Promo Boxes */
+.promo-box {
+    padding: 15px;
+    color: white;
+    text-align: left;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.orange {
+    background: orange;
+}
+
+.blue {
+    background: skyblue;
+}
+
+
+
+
+
+
+
+/* Parent container */
+.deals-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.248);
+    border-radius: 4px;
+    margin: 25px auto auto auto;
+background-color: #fff;
+    max-width: 1250px;
+}
+
+/* Deals Box */
+.deal-box {
+  
+    width: 310px;
+    padding: 15px;
+    padding-left: 35px;
+    margin-bottom: 70px;
+    border-radius: 8px;
+    text-align: left;
+
+
+}
+
+.deal-box p {
+    color: #2b2b2bc1;
+}
+
+/* Countdown Timer */
+.countdown {
+    display: flex;
+    gap: 4px;
+    margin-top: 10px;
+
+}
+
+.time-box {
+    background: #2b2b2bc0;
+    color: white;
+    padding: 4px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: small;
+}
+
+/* Product Boxes */
+.product-box {
+    /* background: white; */
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px rgba(0, 0, 0, 0.129);
+
+}
+
+.product-box img {
+    width: 130px;
+    height: 100%;
+}
+
+.discount {
+    background: #ffebeb;
+    color: red;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+
+/* new big section */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    border-radius: 10px;
+    margin: 25px auto auto auto;
+    max-width: 1250px;
+}
+
+.category {
+    display: grid;
+    grid-template-columns: 300px 3fr;
+    /* Sidebar and Product Grid */
+    gap: 10px;
+    background: white;
+    border-radius: 15px;
+    margin-top: 20px;
+
+}
+
+.category-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    background: #dde8f1;
+    border-radius: 15px;
+
+}
+
+.category-banner img {
+    width: 310px;
+
+}
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columns */
+    gap: 0px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 9px;
+    text-align: left;
+    border: solid 1px rgba(0, 0, 0, 0.129);
+
+}
+
+
+.product:hover {
+        box-shadow: 0 8px 15px rgba(0.1, 0.2, 0.2, 0.2); /* Add shadow effect */
+}
+
+.product img {
+    margin-top: 35px;
+    width: 85px;
+    height: auto;
+    margin-right: 12px;
+}
+
+.product p {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #555;
+    font-weight: 600;
+
+}
+
+.product span {
+    color: #555555b7;
+    font-weight: 450;
+}
+
+/* card-container */
+.blue-bg {
+    margin-top: 25px;
+    position: relative;
+    width: 1364px;
+    height: 400px;
+    /* Adjust height as needed */
+    overflow: hidden;
+    z-index: 0;
+}
+
+.blue-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    /* Slight darkening effect */
+    margin-left: 114px;
+}
+
+/* Left-aligned text */
+.data {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    /* Moves it to the left */
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: white;
+    z-index: 8;
+    max-width: 450px;
+    /* Prevents text from stretching too wide */
+}
+
+.data h1 {
+    font-size: 28px;
+    /* Bigger heading */
+
+}
+
+.data p {
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+/* Right-aligned card */
+.quote-card {
+    position: absolute;
+    top: 45%;
+    right: 2%;
+    transform: translateY(-50%);
+    background: white;
+    padding: 25px;
+    /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 430px;
+    /* Increased width */
+}
+
+.quote-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.quote-card input,
+.quote-card textarea,
+.quote-card select {
+    width: 100%;
+    padding: 10px;
+    /* Increased padding */
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    /* Slightly bigger text */
+}
+
+.quote-card textarea {
+    height: 70px;
+    /* Slightly taller */
+    resize: none;
+}
+
+.input-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.input-row input {
+    flex: 2;
+}
+
+.input-row select {
+    flex: 1;
+}
+
+.quote-card button {
+    width: max-content;
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    /* Increased padding */
+    font-size: 16px;
+    /* Bigger text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.quote-card button:hover {
+    background: #0056b3;
+}
+
+
+                                                  /* recommended items */
+
+
+.recommended-items {
+    padding: 20px;
+    /* background-color: #f5f7fa;  */
+    width: 1280px;
+    margin-left: 100px;
+}
+
+.recommended-items h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    color: #333;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive Grid */
+    gap: 20px;
+}
+
+.item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.item .description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.extra-services {
+    padding: 20px;
+    width: 1280px;  
+    margin-left: 105px;
+    
+}
+
+
+.extra-services h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #333;
+  
+    
+}
+
+.services-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.service-card {
+    background: white;
+    width: 250px; /* Adjust width as needed */
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    background-color: #333;
+
+}
+.icon{
+    background-color: rebeccapurple;
+}
+#icon{
+    height: 39px;
+    width: 39px;
+    border-radius: 50%;
+    background-color: red;
+    /* mix-blend-mode: color-burn; */
+    mix-blend-mode: darken;
+   
+}
+
+.service-card .icon {
+    position: absolute;
+    bottom: 50px;
+    right: 15px;
+    background: #D1E7FF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #3333331f;
+}
+
+.service-card p {
+    font-size: 14px;
+    margin: 10px 15px;
+    color: #141313;
+    text-align: left;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+.flag-h2 h2 {
+        font-size: 24px;
+        margin: 15px auto 35px 120px;
+        color: #333;
+
+}
+
+.flag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    width: 1280px;  
+    margin-left: 120px;
+
+}
+
+
+.flag-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    width: 1280px;  
+    margin: 20px auto auto 120px;
+    
+}
+
+.supplier {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 150px;
+    
+}
+
+
+.supplier img {
+    width: 28px;
+    height: 22px;
+}
+
+.supplier a {
+    text-decoration: none;
+    color: rgba(128, 128, 128, 0.767);
+    font-size: 14px;
+}
+
+.supplier strong {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* 
+
+.subscribe{
+    height: 200px;
+    background-color: rgba(128, 128, 128, 0.407);
+    width: 100vw !important;
+
+} */
+.newsletter-container {
+    text-align: center;
+    background-color: #EFF2F4;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* margin: 30px auto auto 40px; */
+    /* width: 1400px; */
+
+  margin: 0%;
+}
+
+.newsletter-container h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.newsletter-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+ 
+}
+
+/* Form Styling */
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+   
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 250px;
+}
+
+.input-container i {
+    color: #888;
+    margin-right: 8px;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Button Styling */
+#subscribe {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#subscribe:hover {
+    background-color: #0056b3;
+} 
+
+.footer{
+    background-color: #FFFFFF;
+    height: 300px;
+    padding: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.inside-footer{
+   
+    height: max-content;
+}
+
+
+.logos{
+    display: flex;
+    gap: 18px;
+    font-size: x-large;
+    color: grey;
+  
+  
+}
+
+
+#imgg{
+    height: 110px;
+    
+}
+.logo{
+    
+     /* background-color: rgba(128, 128, 128, 0.612);  */
+    height: 30px;
+    width: 30px;
+    /* background-color: #333; */
+    border-radius: 50%;
+    text-align: center;
+}
+
+.footer p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.sections{
+    display: flex;
+gap: 70px;
+
+  height: max-content;
+  padding: 20px;
+}
+#info-last{
+    display: flex;
+    flex-direction: column;
+
+}
+.info p {
+    color: rgba(0, 0, 0, 0.423);
+}
+
+.end-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #EFF2F4;
+    font-size: 14px;
+    color: #666;
+    ;
+}
+
+/* Language Selector */
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.language-selector img {
+    width: 20px;
+    height: auto;
+}
+
+.language-selector .arrow {
+    font-size: 12px;
+    color: #333;
+}
+
