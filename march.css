@@ -9,10 +9,13 @@
 .big{
     background-color: #f5f7fa; /* Light background */
   padding: 20px;
-  width: 100%;
+  width: 1510px;
   
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 
 /* Navbar Container */
 .navbar {
@@ -858,24 +861,13 @@ background-color: #fff;
 }
 
 
-/* 
 
-.subscribe{
-    height: 200px;
-    background-color: rgba(128, 128, 128, 0.407);
-    width: 100vw !important;
-
-} */
 .newsletter-container {
     text-align: center;
     background-color: #EFF2F4;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* margin: 30px auto auto 40px; */
-    /* width: 1400px; */
-
-  margin: 0%;
+    margin: 0px 0px 0px 0px;
+    width: 1510px;
 }
 
 .newsletter-container h2 {
@@ -1026,3 +1018,38 @@ gap: 70px;
 #end-drop {
     mix-blend-mode: color-burn;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  

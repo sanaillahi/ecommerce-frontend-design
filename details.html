@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="details.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <!-- Left Section: Logo & Search -->
+            <div class="logo">
+              <a href="index.html">
+                <img src="photos/logo-colored.png" alt="Brand Logo">
+            </a>
+                
+                <div class="search-container">
+                    <input placeholder="Search" id="search-bar" type="search">
+                    <button id="category-dropdown">
+                        All Categories
+                        <img id="dropdown-icon" src="pictures/ve.png" alt="Dropdown">
+                    </button>
+                    <a href="index.html"><button  id="search-button">Search</button> </a>
+                </div>
+            </div>
+    
+            <!-- Right Section: Icons & User Options -->
+            <div class="icons-section">
+                <div class="icon-container">
+                    <img src="photos/profile.png" alt="Profile">
+                    <span>Profile</span>
+                </div>
+                <div class="icon-container">
+                    <img src="photos/message.png" alt="Message">
+                    <span>Message</span>
+                </div>
+                <div class="icon-container">
+                    <img src="photos/heart.png" alt="Orders">
+                    <span>Orders</span>
+                </div>
+                <div class="icon-container">
+                    <img src="photos/cart.png" alt="My Cart">
+                    <span>My Cart</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+        <div class="sec">
+            <!-- Left Side -->
+            <div class="menu-container">
+                <img id="menu" src="pictures/menuu.png" alt="menu">
+                <span>  <a href="categories.html"> All Categories</a></span>
+                <span>Hot Offers</span>
+                <span>Gift Boxes</span>
+                <span>Projects</span>
+                <span>Menu items</span>
+                <span>Help</span>
+                <img id="vee" src="pictures/ve.png" alt="Dropdown">
+            </div>
+            <div class="mobile-menu-overlay"></div>
+    
+            <!-- Right Side -->
+            <div class="lang">
+                <span>English, USD</span>
+                <img src="pictures/ve.png" alt="Dropdown">
+                <span>Ship to</span>
+                <img src="https://flagcdn.com/w40/de.png
+                " alt="">
+                <img src="pictures/ve.png" alt="Dropdown">
+            </div>
+        </div>
+                                               <!-- breadcrumb -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <!-- <li class="breadcrumb-item"><a href="categories.html">Clothings</a></li> -->
+              <li class="breadcrumb-item active" aria-current="page">Clothings</li>
+              <li class="breadcrumb-item active" aria-current="page">Men's wear</li>
+              <li class="breadcrumb-item active" aria-current="page">Summer clothing</li>
+            </ol>
+          </nav>
+
+
+
+
+          <div class="product-container">
+            <!-- Left Section: Image Gallery -->
+            <div class="product-gallery">
+              <img id="mainImage" src="pictures/greyshirt.png" alt="Main Product Image">
+              <div class="thumbnail-container">
+                <img class="thumbnail" src="pictures/greyshirt.png" alt="Shirt 2" onclick="changeImage('pictures/greyshirt.png')">
+                <img class="thumbnail" src="pictures/greyyshirt.png" alt="Shirt 2" onclick="changeImage('pictures/greyyshirt.png')">
+                <img class="thumbnail" src="pictures/greshirt.png" alt="Shirt 3" onclick="changeImage('pictures/greshirt.png')">
+                <img class="thumbnail" src="pictures/grshirt.png" alt="Shirt 4" onclick="changeImage('pictures/grshirt.png')">
+                <img class="thumbnail" src="pictures/gshirt.png" alt="Shirt 1" onclick="changeImage('pictures/gshirt.png')">
+                <img class="thumbnail" src="pictures/greyshirt.png" alt="Shirt 2" onclick="changeImage('pictures/greyshirt.png')">
+              </div>
+            </div>
+          
+            <!-- Middle Section: Product Details -->
+            <div class="product-details">
+              <p class="stock-status">✔ In Stock</p>
+              <h2>Mens Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h2>
+              <div class="rating">
+                <div class="quantum-rating-stars" aria-label="5 stars">★★★★★</div>
+                9.3 <span><img src="pictures/message.png" alt=""></span> 32 reviews 
+                <span><img src="pictures/shopping_basket.png" alt=""></span> 154 sold
+              </div>
+          
+              <div class="price-box">
+                <div class="price-column">
+                  <p class="price red">$98.00</p>
+                  <p class="qty-range">50–100 pcs</p>
+                </div>
+                <div class="price-column">
+                  <p class="price">$90.00</p>
+                  <p class="qty-range">100–700 pcs</p>
+                </div>
+                <div class="price-column">
+                  <p class="price">$78.00</p>
+                  <p class="qty-range">700+ pcs</p>
+                </div>
+              </div>
+          
+              <div class="product-info-box">
+                <div class="info-row">
+                  <span class="label">Price:</span>
+                  <span class="value">Negotiable</span>
+                </div>
+                <div class="info-row">
+                  <span class="label">Type:</span>
+                  <span class="value">Classic shoes</span>
+                </div>
+                <div class="info-row">
+                  <span class="label">Material:</span>
+                  <span class="value">Plastic material</span>
+                </div>
+                <div class="info-row">
+                  <span class="label">Design:</span>
+                  <span class="value">Modern nice</span>
+                </div>
+                <div class="info-row">
+                  <span class="label">Customization:</span>
+                  <span class="value">Customized logo and <br> design custom packages</span>
+                </div>
+                <div class="info-row">
+                  <span class="label">Protection:</span>
+                  <span class="value">Refund Policy</span>
+                </div>
+                <div class="info-row">
+                  <span class="label">Warranty:</span>
+                  <span class="value">2 years full warranty</span>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Right Section: Supplier Info -->
+            <div class="supplier-info">
+              <div class="supplier-card" >
+                <div class="supplier-header">
+                  <div class="supplier-icon">R</div>
+                  <div class="supplier-name">
+                    <strong>Supplier</strong><br>
+                    Guanjoi Trading LLC
+                  </div>
+                </div>
+                <hr>
+                <div class="supplier-details">
+                  <p><img src="https://flagcdn.com/16x12/de.png" alt="Germany Flag"> Germany, Berlin</p>
+                  <p>✅ Verified Seller</p>
+                  <p>🌐 Worldwide shipping</p>
+                </div>
+                <button class="inquiry-btn">Send inquiry</button>
+                <button class="profile-btn">Seller’s profile</button>
+                <div class="save-for-later">💙 Save for later</div>
+              </div>
+            </div>
+          </div>
+          
+
+
+
+
+
+<script src="march.js"></script> 
+</body>
+</html>

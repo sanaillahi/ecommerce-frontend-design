@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,14 +16,16 @@
         <div class="navbar">
             <!-- Left Section: Logo & Search -->
             <div class="logo">
-                <img src="photos/logo-colored.png" alt="Brand Logo">
+                <a href="index.html">
+                    <img src="photos/logo-colored.png" alt="Brand Logo">
+                </a>
                 <div class="search-container">
                     <input placeholder="Search" id="search-bar" type="search">
                     <button id="category-dropdown">
                         All Categories
                         <img id="dropdown-icon" src="pictures/ve.png" alt="Dropdown">
                     </button>
-                    <button id="search-button">Search</button>
+                    <a href="index.html"><button  id="search-button">Search</button> </a>
                 </div>
             </div>
     
@@ -52,7 +54,7 @@
         <!-- Left Side -->
         <div class="menu-container">
             <img id="menu" src="pictures/menuu.png" alt="menu">
-            <span>All Categories</span>
+            <span>    <a href="categories.html">All Categories</a></span>
             <span>Hot Offers</span>
             <span>Gift Boxes</span>
             <span>Projects</span>
@@ -98,9 +100,15 @@
         </div>
 
         <!-- Banner -->
+
+        <style>
+            .btn:hover {
+                transform: scale(1.07);
+            }
+        </style>
         <div class="banner">
             <p>Latest trending <br> <span id="bold"> Electronic items </span> </p>
-            <button class="btn">Learn more</button>
+            <a href="categories.html">  <button class="btn">Learn more</button> </a>
         </div>
 
         <!-- Sidebar Right -->
@@ -117,9 +125,14 @@
                     </div>
                 </div>
                 <br>
-
+<style>
+    .join:hover {
+        transform: scale(1.07); /* Enlarge the image on hover */
+  filter: brightness(0.8); /* Darken the image on hover */
+    }
+</style>
                 <div class="buttons">
-                    <button class="join">Join now</button>
+                    <button class="join"  >Join now</button>
                     <button class="login">Log in</button>
                 </div>
             </div>
@@ -272,7 +285,8 @@
                     <option>Liters</option>
                 </select>
             </div>
-            <button type="submit">Send inquiry</button>
+            <a href="index.html"><button type="submit">Send inquiry</button> </a>
+            
         </div>
     </div>
 
