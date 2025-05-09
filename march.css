@@ -5,12 +5,18 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+.deals-containee{
+    display: none;
+}
 
 .big{
     background-color: #f5f7fa; /* Light background */
   padding: 20px;
   width: 1510px;
   
+}
+.mobile-slider-container{
+    display: none;
 }
 a{
     text-decoration: none;
@@ -186,7 +192,6 @@ a{
 
 /* Parent container */
 .main-container {
-  background-color: white;
     /* border: solid rgba(0, 0, 0, 0.605) 1px; */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.248);
     border-radius: 4px;
@@ -197,6 +202,9 @@ a{
     gap: 25px;
     padding: 20px;
     max-width: 1250px;
+    /* height: min-content; */
+    max-height: min-content;
+
 
 }
 
@@ -233,10 +241,12 @@ a{
 /* Banner Section */
 .banner {
     background-image: url(photos/Banner-board-800x420\ 2.png);
-    padding: 60px;
+   padding: 60px;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    background-size: contain;
+    background-repeat: no-repeat;
     font-weight: 200;
     height: 100%;
     font-size: x-large;
@@ -344,7 +354,6 @@ a{
     margin-bottom: 5px;
     cursor: pointer;
     display: block;
-    width: 100%;
     border-radius: 5px;
     font-size: 14px;
 }
